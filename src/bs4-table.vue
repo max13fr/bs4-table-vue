@@ -367,7 +367,7 @@ module.exports = {
                     var displayed = false;
 
                     // try to find value in one column
-                    self.$lodash.forEach(self.curColumnsVisible, function(column) {
+                    _.forEach(self.curColumnsVisible, function(column) {
                         var content = String(column.contentFunction(line, column));
                         if (!self.filterCaseSensitive) {
                             content = content.toLowerCase();
@@ -398,7 +398,7 @@ module.exports = {
                 if (listColumns.length) {
                     return self.values.filter(function(line) {
                         var displayed = true;
-                        self.$lodash.forEach(listColumns, function(column) {
+                        _.forEach(listColumns, function(column) {
                             var content = String(column.contentFunction(line, column));
                             if (!self.filterCaseSensitive) {
                                 content = content.toLowerCase();
