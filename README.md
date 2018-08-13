@@ -1,6 +1,9 @@
 # bs4-table-vue
 Bootstrap4 table for Vue (with global search, filters, multi sorts, ...)
 
+# import
+    window.Vue.component('bs4-table', require('bs4-table/src/bs4-table.vue'));
+
 # usage
     <div id="vuejs">
       <bs4-table :columns="columns" :values="users" paginated multi-sort show-columns-picker bordered hover striped>
